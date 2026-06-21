@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marks Counter</title>
+</head>
+<body>
+    <center>
+    
+    
+  <h1 id="marks">Marks: 50</h1>
+  <button id="addBtn">Add Bonus Marks</button>
+  <button id="deductBtn">Deduct Marks</button>
+
+  <script>
+    let marks = 50;
+    const marksHeading = document.querySelector('#marks');
+    const addBtn = document.querySelector('#addBtn');
+    const deductBtn = document.querySelector('#deductBtn');
+
+    function addBonusMarks() {
+      marks += 5;
+      marksHeading.innerHTML = "Marks: " + marks;
+    }
+
+    function deductMarks() {
+      marks -= 5;
+      marksHeading.innerHTML = "Marks: " + marks;
+    }
+
+    addBtn.addEventListener('click', addBonusMarks);
+    deductBtn.addEventListener('click', deductMarks);
+ 
+ 
+ </script>
+
+
+</body>
+</html>

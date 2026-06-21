@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulb Status</title>
+</head>
+<body>
+    <center>
+  <h1 id="status">Bulb is OFF</h1>
+  <button id="onBtn">Turn ON</button>
+  <button id="offBtn">Turn OFF</button>
+
+  <script>
+    const statusHeading = document.querySelector('#status');
+    const onBtn = document.querySelector('#onBtn');
+    const offBtn = document.querySelector('#offBtn');
+
+    function turnOn() {
+      statusHeading.innerHTML = "Bulb is ON";
+    }
+
+    function turnOff() {
+      statusHeading.innerHTML = "Bulb is OFF";
+    }
+
+    onBtn.addEventListener('click', turnOn);
+    offBtn.addEventListener('click', turnOff);
+  </script>
+</body>
+</html>
